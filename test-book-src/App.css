@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav {
+  list-style:  none;
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  background: blue;
+}
+
+.nav-li {
+  color: #d1c2c2;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.nav-li:hover {
+  color: white;
+  font-weight: 500;
+}
+
+a.link {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  padding: .5em 1em;
+  outline: none;
+  border-radius: 3px;
+  background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+
+a.link:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+a.link:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
+
+.star {
+ cursor: pointer;
+ height: 25px;
+ width: 25px;
+ margin: 0 auto;
+ margin-bottom: 10px;
+ display: inline-block;
+ margin-right: 5px;
+ background-color: grey;
+ clip-path: polygon(
+  50% 0%,
+  63% 38%,
+  100% 38%,
+  69% 59%,
+  82% 100%,
+  50% 75%,
+  18% 100%,
+  31% 59%,
+  0% 38%,
+ 37% 38%
+ );
+}
+
+.star.selected {
+ background-color: red;
+}
+
+
+.color-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap
+}
+
+.colorblock {
+  border: 1px solid black;
+  box-shadow: 5px 5px 2px #424525;
+  margin: 20px;
+  padding: 15px;
+}
+
+.color {
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.delete-color {
+  background: #d81121;
+  color: white;
+  border: 1px solid black;
+  padding: 3px 7px;
+  position: relative;
+  top: -80px; left: 75px;
+}
+
+.delete-color:hover {
+  cursor: pointer;
+  background: #fc0518;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
